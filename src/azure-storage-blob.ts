@@ -77,6 +77,7 @@ const uploadFileToBlob = async (file: File | null): Promise<string[]> => {
   return getBlobsInContainer(containerClient);
 };
 
+/*
 const listFileInBlob = async () => {
 
   // get BlobService = notice `?` is pulled out of sasToken - if created in Azure portal
@@ -85,9 +86,9 @@ const listFileInBlob = async () => {
     `https://${storageAccountName}.blob.core.windows.net/?${sasToken}`
   );
 
-  return blobService;
+
   // get Container - full public read access
-/*  const containerClient: ContainerClient = blobService.getContainerClient(containerName);
+  const containerClient: ContainerClient = blobService.getContainerClient(containerName);
   await containerClient.createIfNotExists({
     access: 'container',
   });
@@ -97,8 +98,9 @@ const listFileInBlob = async () => {
 
   // get list of blobs in container
   return getBlobsInContainer(containerClient);
-*/
+
 };
+*/
 // </snippet_uploadFileToBlob>
 
 export default uploadFileToBlob;
