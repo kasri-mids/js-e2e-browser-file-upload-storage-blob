@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import Path from 'path';
 import uploadFileToBlob, { isStorageConfigured} from './azure-storage-blob';
 import {sasToken, containerName, storageAccountName} from './azure-storage-blob';
-import listFileInBlob from './azure-storage-blob';
-import { BlobServiceClient, ContainerClient} from '@azure/storage-blob';
+//import listFileInBlob from './azure-storage-blob';
+//import { BlobServiceClient, ContainerClient} from '@azure/storage-blob';
 const storageConfigured = isStorageConfigured();
 
 
